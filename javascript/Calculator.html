@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Calculator</legend>
+        <input type="number" id="num"><br><br>
+        <button onclick="square()">Square</button>
+        <button onclick="cube()">Cube</button><br><br>
+        <h2 id="res"></h2>
+    </fieldset>
+    <script>
+        function square(){
+            let x=parseInt(document.getElementById("num").value);
+            document.getElementById("res").innerHTML=x*x;
+        }
+        function cube(){
+            let x=parseInt(document.getElementById("num").value);
+            document.getElementById("res").innerHTML=x*x*x;
+        }
+    </script>
+</body>
+</html>

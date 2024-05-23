@@ -1,0 +1,71 @@
+//theme switcher or clr switcher
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  margin: 3em;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1 {
+  line-height: 1.25;
+  margin: 2em 0 0;
+}
+p {
+  margin: .5em 0;
+}
+
+.button {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.button span {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 0 15px 15px 0;
+  border-radius: 30px;
+  border: 3px solid black;
+}
+
+#grey {
+  background: gray;
+}
+#white {
+  background: white;
+}
+#blue{
+  background: blue;
+}
+#blue{
+  background: blue;
+}
+    </style>
+</head>
+<div>
+    <nav>
+        <a href="/" aria-current="page">Home</a>
+        <a target="_blank" href="">YOUTUBE</a>
+    </nav>
+    <div class="canvas">
+    <h1>Color Scheme Switcher</h1>
+    <span class="button" id="grey"></span>
+    <span class="button"id="white"></span>
+    <span class="button"id="blue"></span>
+    <span class="button"id="yellow"></span>
+    <h2>Try checking on one of the color above
+        <span>to change the background-color of this page</span>
+    </h2>
+</div>
+<script src="chaiaurcode.js"></script>
+</body>
+</html>

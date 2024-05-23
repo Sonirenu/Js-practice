@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="box1" placeholder="enter user name">
+    <script>
+        let x=document.getElementById("box1").value;
+        document.write(x);
+    </script>
+    <input type="number" id="num1" placeholder="enter number">
+    <script>
+        //parseInt used to convert string datatype to number datatype
+        let y=parseInt(document.getElementById("num1").value);
+        document.write(y);
+    </script>
+    
+        <button onclick="Login('renu','renu@123')">Click me!</button>
+        <script>
+            function Login(p1,p2){
+                p1=='renu' && p2=='renu@123' ? document.write("Login success"):document.write("login Fail");
+            }
+        </script>
+</body>
+</html>
